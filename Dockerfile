@@ -5,7 +5,6 @@ WORKDIR /code
 # Make RUN commands use `bash --login`:
 SHELL ["/bin/bash", "--login", "-c"]
 
-ENV ENVIRONMENT="LOCAL"
 # Create the environment:
 COPY environment.yml .
 RUN conda env create -f environment.yml
