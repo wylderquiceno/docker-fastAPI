@@ -1,5 +1,9 @@
 services:
   app:
+    build: .
+    ports:
+      - "5000:5000"
+    end_file: .env
     entrypoint:
     - sleep
     - infinity
